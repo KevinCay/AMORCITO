@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Serás mi San Valentín?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #000, #1a1a1a);
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Efecto de estrellas */
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.3;
+            z-index: -1;
+            animation: twinkle 5s infinite;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.2; }
+            50% { opacity: 0.5; }
+            100% { opacity: 0.2; }
+        }
+
+        h1 {
+            font-size: 3.5em;
+            font-family: 'Pacifico', cursive;
+            color: #ff4081;
+            margin-top: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.8;
+            margin: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #ff4081, #ff80ab);
+            color: #fff;
+            font-size: 1.5em;
+            font-family: 'Pacifico', cursive;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0px 5px 15px rgba(255, 64, 129, 0.5);
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        .button:hover {
+            background: linear-gradient(45deg, #ff80ab, #ff4081);
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 1em;
+            color: #ff80ab;
+            animation: fadeIn 5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>¿Serás mi San Valentín?</h1>
+    <p>Amor mío, cada día contigo es un regalo del cielo. Eres la luz de mi vida y la razón por la que sonrío incluso en los días más oscuros.</p>
+    <p>Quiero que sepas que eres todo para mí, mi compañera, mi mejor amiga y la dueña de mi corazón. ¿Aceptas ser mi San Valentín y hacerme el hombre más feliz del mundo?</p>
+    <a href="pagina2.html" class="button">Sí (¡No hay más opciones porque siempre te elijo!)</a>
+    <footer>Siempre juntos, siempre felices. Te amo más allá del infinito. 🌹</footer>
+</body>
+</html>
