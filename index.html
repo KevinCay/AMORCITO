@@ -14,50 +14,32 @@
             font-family: 'Roboto', sans-serif;
             text-align: center;
             overflow: hidden;
-        }
-
-        /* Efecto de estrellas */
-        body::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://www.transparenttextures.com/patterns/stardust.png');
-            opacity: 0.3;
-            z-index: -1;
-            animation: twinkle 5s infinite;
-        }
-
-        @keyframes twinkle {
-            0% { opacity: 0.2; }
-            50% { opacity: 0.5; }
-            100% { opacity: 0.2; }
+            padding: 20px;
         }
 
         h1 {
-            font-size: 3.5em;
+            font-size: 3em;
             font-family: 'Pacifico', cursive;
             color: #ff4081;
-            margin-top: 30px;
+            margin-top: 20px;
             animation: fadeIn 2s ease-in-out;
         }
 
         p {
-            font-size: 1.5em;
-            line-height: 1.8;
-            margin: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 15px auto;
+            max-width: 90%;
             animation: fadeIn 3s ease-in-out;
         }
 
         .button {
             display: inline-block;
-            margin-top: 30px;
-            padding: 15px 30px;
+            margin-top: 20px;
+            padding: 12px 25px;
             background: linear-gradient(45deg, #ff4081, #ff80ab);
             color: #fff;
-            font-size: 1.5em;
+            font-size: 1.3em;
             font-family: 'Pacifico', cursive;
             text-decoration: none;
             border-radius: 30px;
@@ -72,7 +54,7 @@
         }
 
         footer {
-            margin-top: 50px;
+            margin-top: 30px;
             font-size: 1em;
             color: #ff80ab;
             animation: fadeIn 5s ease-in-out;
@@ -82,11 +64,42 @@
             0% { opacity: 0; transform: translateY(-20px); }
             100% { opacity: 1; transform: translateY(0); }
         }
+
+        /* Diseño responsivo */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .button {
+                font-size: 1.1em;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .button {
+                font-size: 1em;
+                padding: 10px 18px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>¿Serás mi San Valentín Amorcito?.</h1>
-    <p>Amor mío mi Gabycita hermosa, mi panquecito, mi reina preciosa, cada día contigo es un regalo del cielo. Eres la luz de mi vida y la razón por la que sonrío incluso en los días más oscuros.</p>
+    <h1>¿Serás mi San Valentín, Amorcito?</h1>
+    <p>Amor mío, mi Gabycita hermosa, mi panquecito, mi reina preciosa, cada día contigo es un regalo del cielo. Eres la luz de mi vida y la razón por la que sonrío incluso en los días más oscuros.</p>
     <p>Quiero que sepas que eres todo para mí, mi compañera, mi mejor amiga y la dueña de mi corazón. ¿Aceptas ser mi San Valentín y hacerme el hombre más feliz del mundo?</p>
     <a href="/pagina2.html" class="button">Sí (¡No hay más opciones porque siempre te elijo!)</a>
     <footer>Siempre juntos, siempre felices. Te amo más allá del infinito. 🌹</footer>
